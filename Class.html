@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Greetings Master</title>
+
+</head>
+
+<body>
+<p id="student1"></p>
+<p id="student2"></p>
+<script>
+class students {
+    constructor(name , year) {
+        this.name=name 
+        this.year=year   
+
+    }
+    age () {
+        var date=new Date()
+        return date.getFullYear() - this.year
+    }
+    }
+    student1=new students("Shivam" , "2010")
+    document.getElementById("student1") .innerHTML="My name is " + student1.name + " I was born in " + student1.year +  " My age is " + student1.age()
+    student1=new students("Satyam" , "1984")
+    document.getElementById("student2") .innerHTML="My name is " + student2.name + " I was born in " + student2.year +  " My age is " + student2.age()
+</script>
+
+</body>
